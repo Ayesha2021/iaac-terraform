@@ -64,3 +64,17 @@ git push -u origin main
 git remote add origin https://github.com/Ayesha2021/iaac-terraform.git
 git branch -M main
 git push -u origin main
+
+
+git 
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: pre-receive hook declined
+To https://github.com/Ayesha2021/iaac-terraform.git
+
+git filter-branch --force --index-filter "git rm --cached -r --ignore-unmatch .terraform/" --prune-empty --tag-name-filter cat -- --all
+git add .gitignore
+git commit -m "Add .gitignore for Terraform"
+
+
+
+
